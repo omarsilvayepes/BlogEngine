@@ -19,17 +19,31 @@ namespace BlogEngine.Services
 
             
         }
-        public Task AddCommentById(string id, string comment)
+        public async Task<string> AddCommentById(Comment comment)
         {
-            throw new NotImplementedException();
+            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(comment.IdPost) }}).Result.FirstOrDefaultAsync();
+
+            if (posts != null)
+            {
+                List<Comment> comments = posts.Comments;
+                comments.Add(new Comment { 
+                    IdPost=comment.IdPost,
+                    Date = DateTime.Now,
+                    comment=comment.comment,
+                    Author =comment.Author
+                });
+
+                var postDB = Builders<Post>.Filter.Eq(result => result.Id, comment.IdPost);
+                var updateCommentPost = Builders<Post>.Update.Set("Comments", comments);
+                await mongoCollection.UpdateOneAsync(postDB, updateCommentPost);
+                return "OK";
+            }
+            return "Post doesn´t exist";
         }
 
         public async Task<Post> createOrUpdate(Post post)
         {
-            
-            //Post foundPost = await mongoCollection.FindAsync(new BsonDocument { { "Id", post.Id } })
-            //    .Result.FirstOrDefaultAsync();
-        
+                   
             if (post.Id != null)
             {
                 var postDB = Builders<Post>.Filter.Eq(resultado => resultado.Id, post.Id);//actualizacion
@@ -52,9 +66,10 @@ namespace BlogEngine.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<Post>> getPosts()
+        public async Task<List<Post>> getPublishedPosts()
         {
-            throw new NotImplementedException();
+            List<Post> lista = await mongoCollection.FindAsync(new BsonDocument { { "status", "published" } }).Result.ToListAsync();
+            return lista;
         }
 
         public Task<Post> getPostsByUser(User user)

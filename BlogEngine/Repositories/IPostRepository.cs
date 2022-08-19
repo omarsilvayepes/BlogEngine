@@ -4,8 +4,8 @@ namespace BlogEngine.Repositories
 {
     public interface IPostRepository
     {
-        Task<List<Post>> getPosts();
-        Task AddCommentById(string id,string comment);
+        Task<List<Post>> getPublishedPosts();
+        Task<string> AddCommentById(Comment comment);
         Task<Post> createOrUpdate(Post post);//status created unlocked
         Task<Post> getPostsByUser(User user);
 

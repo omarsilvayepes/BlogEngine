@@ -46,5 +46,39 @@ namespace BlogEngine.Controllers
             }
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> getPublishedPosts()
+        {
+            try
+            {
+                var lista = await postRepository.getPublishedPosts();
+                response.result = lista;
+                response.DisplayMessage = "Post's List";
+            }
+
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessages = new List<string> { ex.ToString() };
+
+            }
+            return Ok(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddCommentById([FromBody] Comment comment)
+        {
+            string  status = await postRepository.AddCommentById(comment);
+            if (status.Equals("OK"))
+            {
+                response.IsSuccess = true;
+                response.DisplayMessage = "Added comment";
+                return Ok(response);
+            }
+            response.IsSuccess = false;
+            response.DisplayMessage = "Post doesn´t exist";
+            return NotFound(response);
+        }
     }
 }

@@ -6,13 +6,13 @@ namespace BlogEngine.Models
 {
     public class Comment
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-
+        [Required]
+        public string IdPost { get; set; }
+        public DateTime Date { get; set; }
         [Required]
         public string comment { get; set; }
-  
-      
+        [Required]
+        public string Author { get; set; }
+
     }
 }
