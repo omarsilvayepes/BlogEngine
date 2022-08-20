@@ -29,7 +29,8 @@ namespace BlogEngine
 
             //añadir instancia de los servicio
             services.AddScoped<IPostRepository, PostService>();
-            
+            services.AddScoped<IUserRepository, UserService>();
+
 
             //add autenticaciones
 
@@ -48,7 +49,7 @@ namespace BlogEngine
                 }
                 );
 
-            //agregando cors
+            //add cors
             services.AddCors(options => options.AddPolicy("AlloWebApp", builder => builder.AllowAnyOrigin()
                                                                                            .AllowAnyHeader()
                                                                                            .AllowAnyMethod()));
@@ -69,7 +70,7 @@ namespace BlogEngine
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BlogEngine v1"));
             }
-            app.UseCors("AlloWebApp");//añadir cors
+            app.UseCors("AlloWebApp");//add cors
 
             app.UseHttpsRedirection();
 

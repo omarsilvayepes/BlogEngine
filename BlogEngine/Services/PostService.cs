@@ -21,7 +21,7 @@ namespace BlogEngine.Services
         }
         public async Task<string> AddCommentById(Comment comment)
         {
-            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(comment.IdPost) }}).Result.FirstOrDefaultAsync();
+            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(comment.IdPost) }, { "status", "published" } }).Result.FirstOrDefaultAsync();
 
             if (posts != null)
             {
@@ -38,7 +38,7 @@ namespace BlogEngine.Services
                 await mongoCollection.UpdateOneAsync(postDB, updateCommentPost);
                 return "OK";
             }
-            return "Post doesn´t exist";
+            return "Cannot add comment";
         }
 
         public async Task<Post> createOrUpdate(Post post)

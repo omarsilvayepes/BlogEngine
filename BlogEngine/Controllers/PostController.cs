@@ -8,7 +8,7 @@ namespace BlogEngine.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    //[Authorize]
+    
     public class PostController : ControllerBase
     {
         private readonly IPostRepository postRepository;
@@ -19,7 +19,7 @@ namespace BlogEngine.Controllers
             this.postRepository = postRepository;
             response = new Response();
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreatePost([FromBody] Post post)
         {
@@ -77,7 +77,7 @@ namespace BlogEngine.Controllers
                 return Ok(response);
             }
             response.IsSuccess = false;
-            response.DisplayMessage = "Post doesn´t exist";
+            response.DisplayMessage = "Cannot add comment";
             return NotFound(response);
         }
     }
