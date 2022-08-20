@@ -22,14 +22,14 @@ namespace BlogEngine.Controllers
         [HttpPost("Register")]
         public async Task<IActionResult> Register(UserDTO userDTO)
         {
-            string token = await _userRepository.Register(new User { UserName = userDTO.UserName }, userDTO.PassWord);
-            if (token.Equals("User already register"))
+            string result = await _userRepository.Register(new User { UserName = userDTO.UserName,Role=userDTO.Role }, userDTO.PassWord);
+            if (result.Equals("User already register"))
             {
                 response.IsSuccess = false;
                 response.DisplayMessage = "User already register";
                 return BadRequest(response);
             }
-            if (token.Equals("500"))
+            if (result.Equals("500"))
             {
                 response.IsSuccess = false;
                 response.DisplayMessage = "Error for create the user";
@@ -37,10 +37,10 @@ namespace BlogEngine.Controllers
             }
 
             response.DisplayMessage = "Successfully registered user";
-            JWTPackage jWTPackage = new JWTPackage();
-            jWTPackage.UserName = userDTO.UserName;
-            jWTPackage.Token = token;
-            response.result = jWTPackage;
+            //JWTPackage jWTPackage = new JWTPackage();
+            //jWTPackage.UserName = userDTO.UserName;
+            //jWTPackage.Token = token;
+            //response.result = jWTPackage;
             return Ok(response);
         }
 

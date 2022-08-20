@@ -20,6 +20,16 @@ namespace BlogEngine
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // claims
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("WriterOnly", policy => policy.RequireClaim("Role", "Writer"));
+                options.AddPolicy("PublicOnly", policy => policy.RequireClaim("Role", "Public"));
+                options.AddPolicy("EditorOnly", policy => policy.RequireClaim("Role", "Editor"));
+            });
+
+
             // requires using Microsoft.Extensions.Options
             services.Configure<DatabaseSettings>(
                 Configuration.GetSection(nameof(DatabaseSettings)));

@@ -8,5 +8,8 @@ namespace BlogEngine.Models
         public string UserName { get; set; }
         [Required, MinLength(3)]
         public string PassWord { get; set; }
+        [Required, MinLength(3)]
+        public string Role { get; set; }
+
     }
 }

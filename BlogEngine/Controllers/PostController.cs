@@ -8,7 +8,6 @@ namespace BlogEngine.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    
     public class PostController : ControllerBase
     {
         private readonly IPostRepository postRepository;
@@ -19,7 +18,8 @@ namespace BlogEngine.Controllers
             this.postRepository = postRepository;
             response = new Response();
         }
-        [Authorize]
+
+        [Authorize(Policy = "WriterOnly")]
         [HttpPost]
         public async Task<IActionResult> CreatePost([FromBody] Post post)
         {
@@ -47,6 +47,7 @@ namespace BlogEngine.Controllers
 
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> getPublishedPosts()
         {
@@ -66,6 +67,7 @@ namespace BlogEngine.Controllers
             return Ok(response);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddCommentById([FromBody] Comment comment)
         {

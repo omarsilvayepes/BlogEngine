@@ -59,7 +59,8 @@ namespace BlogEngine.Services
                     user.PassWordHash = passwordHash;
                     user.PassWordSalt = passwordSalt;
                     await mongoCollection.InsertOneAsync(user);
-                    return crearToken(user);//return  Token
+                    //return crearToken(user);//return  Token
+                    return ("OK");
 
                 }
                 return "User already register";
@@ -101,7 +102,8 @@ namespace BlogEngine.Services
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier,user.Id),
-                new Claim(ClaimTypes.Name,user.UserName)
+                new Claim(ClaimTypes.Name,user.UserName),
+                new Claim("Role",user.Role)
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8
