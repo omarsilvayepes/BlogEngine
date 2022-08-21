@@ -33,7 +33,7 @@ namespace BlogEngine.Services
             return false;
         }
 
-        public async Task<string> Login(string userName, string password)
+        public async Task<string> Login(string userName, string password,string role)
         {
             User user = await mongoCollection.FindAsync(new BsonDocument { { "UserName", userName } })
              .Result.FirstOrDefaultAsync();
@@ -44,7 +44,10 @@ namespace BlogEngine.Services
             if (!VerificarPassWordHash(password, user.PassWordHash, user.PassWordSalt))
             {
                 return "PassWordWrong";
-
+            }
+            if (!user.Role.Equals(role))
+            {
+                return "RoleNotAuthorize";
             }
             return crearToken(user);
         }

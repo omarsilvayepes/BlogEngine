@@ -43,28 +43,20 @@ namespace BlogEngine.Services
 
         public async Task<Post> createOrUpdate(Post post)
         {
-                   
+            post.Date = DateTime.Now;
+            //post.isLocked = false;
+            post.status = "created";
             if (post.Id != null)
             {
-                var postDB = Builders<Post>.Filter.Eq(resultado => resultado.Id, post.Id);//actualizacion
+                var postDB = Builders<Post>.Filter.Eq(resultado => resultado.Id, post.Id);//update
                 await mongoCollection.ReplaceOneAsync(postDB, post);
                 return post;
             }
-            post.isLocked = false;
-            post.status = "created";
             await mongoCollection.InsertOneAsync(post);
             return post;
         }
 
-        public Task dealPendingPost(Post post)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<Post>> getPendingPosts(string status)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public async Task<List<Post>> getPublishedPosts()
         {
@@ -72,14 +64,60 @@ namespace BlogEngine.Services
             return lista;
         }
 
-        public Task<Post> getPostsByUser(User user)
+        public async Task<List<Post>> getCreateAndPendingPosts()
         {
-            throw new NotImplementedException();
+            List<Post> lista = await mongoCollection.FindAsync(new BsonDocument { { "status", "created" } } ).Result.ToListAsync();//pending or??
+            return lista;
         }
 
-        public Task<Post> SubmitPost(Post post)
+        public async  Task<string> SubmitPost(Post post)
         {
-            throw new NotImplementedException();
+            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(post.Id) }, { "status", "created" } }).Result.FirstOrDefaultAsync();
+
+            if (posts != null)
+            {
+                //post.isLocked = true;
+                var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
+                var updateStatusPost = Builders<Post>.Update.Set("status", "pending");
+                await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
+                return "OK";
+            }
+            return "Cannot submit post";
+        }
+
+        
+        public async Task<List<Post>> getPendingPosts()
+        {
+            List<Post> lista = await mongoCollection.FindAsync(new BsonDocument { { "status", "pending" } }).Result.ToListAsync();
+            return lista;
+        }
+
+        public async  Task<string> ApprovePendingPost(Post post)
+        {
+            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(post.Id) }, { "status", "pending" } }).Result.FirstOrDefaultAsync();
+
+            if (posts != null)
+            {
+                var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
+                var updateStatusPost = Builders<Post>.Update.Set("status", "published");
+                await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
+                return "OK";
+            }
+            return "Cannot Approve post";
+        }
+
+        public async Task<string> RejectPendingPost(Post post)
+        {
+            Post posts = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(post.Id) }, { "status", "pending" } }).Result.FirstOrDefaultAsync();
+
+            if (posts != null)
+            {
+                var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
+                var updateStatusPost = Builders<Post>.Update.Set("status", "created");
+                await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
+                return "OK";
+            }
+            return "Cannot Reject post";
         }
     }
 }

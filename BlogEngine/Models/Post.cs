@@ -10,7 +10,6 @@ namespace BlogEngine.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [Required]
         public DateTime Date { get; set; }
         
         [Required]
@@ -23,6 +22,6 @@ namespace BlogEngine.Models
         public List<Comment> Comments { get; set; }
         
         public string status { get; set; }
-        public bool isLocked { get; set; }
+        //public bool isLocked { get; set; }
     }
 }

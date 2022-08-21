@@ -47,6 +47,61 @@ namespace BlogEngine.Controllers
 
         }
 
+        [Authorize(Policy = "WriterOnly")]
+        [HttpPost]
+        public async Task<IActionResult> UpdatePost([FromBody] Post post)
+        {
+            try
+            {
+                Post model = await postRepository.createOrUpdate(post);
+                response.result = model;
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+
+                response.IsSuccess = false;
+                response.DisplayMessage = "Error for update post";
+                response.ErrorMessages = new List<string> { ex.ToString() };
+                return BadRequest(response);
+            }
+        }
+
+        [Authorize(Policy = "WriterOnly")]
+        [HttpGet]
+        public async Task<IActionResult> getCreateAndPendingPosts()
+        {
+            try
+            {
+                var lista = await postRepository.getCreateAndPendingPosts();
+                response.result = lista;
+                response.DisplayMessage = "Post's List";
+            }
+
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessages = new List<string> { ex.ToString() };
+            }
+            return Ok(response);
+        }
+
+        [Authorize(Policy = "WriterOnly")]
+        [HttpPost]
+        public async Task<IActionResult> SubmitPost([FromBody] Post post)
+        {
+            string status = await postRepository.SubmitPost(post);
+            if (status.Equals("OK"))
+            {
+                response.IsSuccess = true;
+                response.DisplayMessage = "Submitted post";
+                return Ok(response);
+            }
+            response.IsSuccess = false;
+            response.DisplayMessage = "Cannot submit post";
+            return NotFound(response);
+        }
+
         [Authorize]
         [HttpGet]
         public async Task<IActionResult> getPublishedPosts()
@@ -62,7 +117,6 @@ namespace BlogEngine.Controllers
             {
                 response.IsSuccess = false;
                 response.ErrorMessages = new List<string> { ex.ToString() };
-
             }
             return Ok(response);
         }
@@ -80,6 +134,57 @@ namespace BlogEngine.Controllers
             }
             response.IsSuccess = false;
             response.DisplayMessage = "Cannot add comment";
+            return NotFound(response);
+        }
+
+        [Authorize(Policy = "EditorOnly")]
+        [HttpGet]
+        public async Task<IActionResult> getPendingPosts()
+        {
+            try
+            {
+                var lista = await postRepository.getPendingPosts();
+                response.result = lista;
+                response.DisplayMessage = "Post's List";
+            }
+
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessages = new List<string> { ex.ToString() };
+            }
+            return Ok(response);
+        }
+
+        [Authorize(Policy = "EditorOnly")]
+        [HttpPost]
+        public async Task<IActionResult> ApprovePendingPost([FromBody] Post post)
+        {
+            string status = await postRepository.ApprovePendingPost(post);
+            if (status.Equals("OK"))
+            {
+                response.IsSuccess = true;
+                response.DisplayMessage = "Published post";
+                return Ok(response);
+            }
+            response.IsSuccess = false;
+            response.DisplayMessage = "Cannot Approve post";
+            return NotFound(response);
+        }
+
+        [Authorize(Policy = "EditorOnly")]
+        [HttpPost]
+        public async Task<IActionResult> RejectPendingPost([FromBody] Post post)
+        {
+            string status = await postRepository.RejectPendingPost(post);
+            if (status.Equals("OK"))
+            {
+                response.IsSuccess = true;
+                response.DisplayMessage = "Rejected post";
+                return Ok(response);
+            }
+            response.IsSuccess = false;
+            response.DisplayMessage = "Cannot Reject post";
             return NotFound(response);
         }
     }

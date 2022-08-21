@@ -6,13 +6,11 @@ namespace BlogEngine.Repositories
     {
         Task<List<Post>> getPublishedPosts();
         Task<string> AddCommentById(Comment comment);
-        Task<Post> createOrUpdate(Post post);//status created unlocked
-        Task<Post> getPostsByUser(User user);
-
-        Task<Post> SubmitPost(Post post);//status pending-approval locked for update
-
-        Task<List<Post>> getPendingPosts(string status);
-        Task dealPendingPost(Post post);//approve-> status publish- or reject status reject-unlocked
-        
+        Task<Post> createOrUpdate(Post post);//status: created- unlocked
+        Task<List<Post>> getCreateAndPendingPosts();
+        Task<string> SubmitPost(Post post);//status: pending-approval- locked for update
+        Task<List<Post>> getPendingPosts();
+        Task<string> ApprovePendingPost(Post post);// status: published:locked
+        Task<string> RejectPendingPost(Post post);//status: created-unlocked
     }
 }
