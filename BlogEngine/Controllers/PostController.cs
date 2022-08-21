@@ -3,7 +3,6 @@ using BlogEngine.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace BlogEngine.Controllers
 {
     [Route("api/[controller]/[action]")]
@@ -25,11 +24,11 @@ namespace BlogEngine.Controllers
         {
             try
             {
-                Post model = await postRepository.createOrUpdate(post);
+                Post model = await postRepository.CreatePost(post);
                 if (model == null)
                 {
                     response.IsSuccess = false;
-                    response.DisplayMessage = "Post is already createed";
+                    response.DisplayMessage = "Cannot create Post";
                     return BadRequest(response);
                 }
                 response.result = model;
@@ -38,13 +37,11 @@ namespace BlogEngine.Controllers
             }
             catch (Exception ex)
             {
-
                 response.IsSuccess = false;
                 response.DisplayMessage = "Error for create the register";
                 response.ErrorMessages = new List<string> { ex.ToString() };
                 return BadRequest(response);
             }
-
         }
 
         [Authorize(Policy = "WriterOnly")]
@@ -53,13 +50,18 @@ namespace BlogEngine.Controllers
         {
             try
             {
-                Post model = await postRepository.createOrUpdate(post);
+                Post model = await postRepository.UpdatePost(post);
+                if (model == null)
+                {
+                    response.IsSuccess = false;
+                    response.DisplayMessage = "Cannot Edit Post";
+                    return BadRequest(response);
+                }
                 response.result = model;
                 return Ok(response);
             }
             catch (Exception ex)
             {
-
                 response.IsSuccess = false;
                 response.DisplayMessage = "Error for update post";
                 response.ErrorMessages = new List<string> { ex.ToString() };
@@ -186,6 +188,41 @@ namespace BlogEngine.Controllers
             response.IsSuccess = false;
             response.DisplayMessage = "Cannot Reject post";
             return NotFound(response);
+        }
+
+        [Authorize(Policy = "EditorOnly")]
+        [HttpPost]
+        public async Task<IActionResult> AddCommentRejectPost([FromBody] Comment comment)
+        {
+            string status = await postRepository.AddCommentRejectPost(comment);
+            if (status.Equals("OK"))
+            {
+                response.IsSuccess = true;
+                response.DisplayMessage = "Added comment";
+                return Ok(response);
+            }
+            response.IsSuccess = false;
+            response.DisplayMessage = "Cannot add comment";
+            return NotFound(response);
+        }
+
+        [Authorize(Policy = "WriterOnly")]
+        [HttpGet]
+        public async Task<IActionResult> getCommentsRejectPost()
+        {
+            try
+            {
+                var lista = await postRepository.getCommentsRejectPost();
+                response.result = lista;
+                response.DisplayMessage = "Comment's List";
+            }
+
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.ErrorMessages = new List<string> { ex.ToString() };
+            }
+            return Ok(response);
         }
     }
 }

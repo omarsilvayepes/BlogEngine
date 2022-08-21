@@ -62,7 +62,6 @@ namespace BlogEngine.Services
                     user.PassWordHash = passwordHash;
                     user.PassWordSalt = passwordSalt;
                     await mongoCollection.InsertOneAsync(user);
-                    //return crearToken(user);//return  Token
                     return ("OK");
 
                 }
@@ -117,7 +116,7 @@ namespace BlogEngine.Services
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddDays(1),// time to expires
+                Expires = DateTime.Now.AddDays(1),// time to expire
                 SigningCredentials = creds
             };
 

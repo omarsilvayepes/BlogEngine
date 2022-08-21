@@ -1,6 +1,4 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BlogEngine.Models
 {
@@ -13,6 +11,5 @@ namespace BlogEngine.Models
         public string comment { get; set; }
         [Required]
         public string Author { get; set; }
-
     }
 }

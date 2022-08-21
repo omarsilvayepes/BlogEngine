@@ -37,10 +37,6 @@ namespace BlogEngine.Controllers
             }
 
             response.DisplayMessage = "Successfully registered user";
-            //JWTPackage jWTPackage = new JWTPackage();
-            //jWTPackage.UserName = userDTO.UserName;
-            //jWTPackage.Token = token;
-            //response.result = jWTPackage;
             return Ok(response);
         }
 

@@ -41,22 +41,30 @@ namespace BlogEngine.Services
             return "Cannot add comment";
         }
 
-        public async Task<Post> createOrUpdate(Post post)
+        public async Task<Post> CreatePost(Post post)
         {
-            post.Date = DateTime.Now;
-            //post.isLocked = false;
-            post.status = "created";
-            if (post.Id != null)
+            if(post != null)
             {
-                var postDB = Builders<Post>.Filter.Eq(resultado => resultado.Id, post.Id);//update
+                post.Date = DateTime.Now;
+                post.status = "created";
+                await mongoCollection.InsertOneAsync(post);
+                return post;
+            }
+            return null;
+        }
+        public async Task<Post> UpdatePost(Post post)
+        {
+            Post postDb = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(post.Id) } }).Result.FirstOrDefaultAsync();
+
+            if (postDb != null && !post.status.Equals("published") && !post.status.Equals("pending"))
+            {
+                post.Date = DateTime.Now;
+                var postDB = Builders<Post>.Filter.Eq(resultado => resultado.Id, post.Id);
                 await mongoCollection.ReplaceOneAsync(postDB, post);
                 return post;
             }
-            await mongoCollection.InsertOneAsync(post);
-            return post;
+            return null;
         }
-
-        
 
         public async Task<List<Post>> getPublishedPosts()
         {
@@ -66,7 +74,8 @@ namespace BlogEngine.Services
 
         public async Task<List<Post>> getCreateAndPendingPosts()
         {
-            List<Post> lista = await mongoCollection.FindAsync(new BsonDocument { { "status", "created" } } ).Result.ToListAsync();//pending or??
+            var filter = Builders<Post>.Filter.Eq(resultado => resultado.status, "created") | Builders<Post>.Filter.Eq(resultado => resultado.status, "pending");
+            List<Post> lista = await mongoCollection.FindAsync(filter).Result.ToListAsync();
             return lista;
         }
 
@@ -76,7 +85,7 @@ namespace BlogEngine.Services
 
             if (posts != null)
             {
-                //post.isLocked = true;
+                post.Date = DateTime.Now;   
                 var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
                 var updateStatusPost = Builders<Post>.Update.Set("status", "pending");
                 await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
@@ -98,6 +107,7 @@ namespace BlogEngine.Services
 
             if (posts != null)
             {
+                post.Date = DateTime.Now;
                 var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
                 var updateStatusPost = Builders<Post>.Update.Set("status", "published");
                 await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
@@ -112,12 +122,47 @@ namespace BlogEngine.Services
 
             if (posts != null)
             {
+                post.Date = DateTime.Now;
                 var postDB = Builders<Post>.Filter.Eq(result => result.Id, post.Id);
-                var updateStatusPost = Builders<Post>.Update.Set("status", "created");
+                var updateStatusPost = Builders<Post>.Update.Set("status", "rejected");
                 await mongoCollection.UpdateOneAsync(postDB, updateStatusPost);
                 return "OK";
             }
             return "Cannot Reject post";
+        }
+
+        public async Task<string> AddCommentRejectPost(Comment comment)
+        {
+            Post postsDb = await mongoCollection.FindAsync(new BsonDocument { { "_id", new ObjectId(comment.IdPost) }, { "status", "rejected" } }).Result.FirstOrDefaultAsync();
+
+            if (postsDb != null)
+            {
+                List<Comment> comments = postsDb.Comments;
+                comments.Add(new Comment
+                {
+                    IdPost = comment.IdPost,
+                    Date = DateTime.Now,
+                    comment = comment.comment,
+                    Author = comment.Author
+                });
+
+                var postDB = Builders<Post>.Filter.Eq(result => result.Id, comment.IdPost);
+                var updateCommentPost = Builders<Post>.Update.Set("Comments", comments);
+                await mongoCollection.UpdateOneAsync(postDB, updateCommentPost);
+                return "OK";
+            }
+            return "Cannot add comment";
+        }
+
+        public async Task<List<List<Comment>>> getCommentsRejectPost()
+        {
+            List<Post> lista = await mongoCollection.FindAsync(new BsonDocument { { "status", "rejected" } }).Result.ToListAsync();
+            List<List<Comment>> comments = new List<List<Comment>>();
+            foreach (var post in lista)
+            {
+                comments.Add(post.Comments);
+            }
+            return comments;
         }
     }
 }
