@@ -18,14 +18,18 @@ Blog Engine / CMS backend API, that allows to create, edit and publish text base
 
 ### Executing program
 
-* localhost /docker / iis /console
+* Heroku /localhost /docker / iis /console
+
 ```
 code blocks for commands
 ```
 
 ## Help
 
-The application runs on localhost  (https://localhost:7168) and is tested with Postman , Swagger or any API testing platform.
+* The solution it was deploy in Heroku (https://app-blogengine.herokuapp.com/) so it can be tested without local install.
+
+* The application as well runs on localhost  (https://localhost:7168/) and is   tested with Postman , Swagger or any API testing platform.
+
 ```
 command to run if program contains helper info
 ```
