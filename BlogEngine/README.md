@@ -34,22 +34,22 @@ code blocks for commands
 
 POST:
 
-https://app-blogengine.herokuapp.com/api/User/Login
-https://app-blogengine.herokuapp.com/api/User/Register
-https://app-blogengine.herokuapp.com/api/Post/CreatePost
-https://app-blogengine.herokuapp.com/api/Post/UpdatePost
-https://app-blogengine.herokuapp.com/api/Post/AddCommentById
-https://app-blogengine.herokuapp.com/api/Post/AddCommentRejectPost
-https://app-blogengine.herokuapp.com/api/Post/SubmitPost
-https://app-blogengine.herokuapp.com/api/Post/ApprovePendingPost
-https://app-blogengine.herokuapp.com/api/Post/RejectPendingPost
+* https://app-blogengine.herokuapp.com/api/User/Login
+* https://app-blogengine.herokuapp.com/api/User/Register
+* https://app-blogengine.herokuapp.com/api/Post/CreatePost
+* https://app-blogengine.herokuapp.com/api/Post/UpdatePost
+* https://app-blogengine.herokuapp.com/api/Post/AddCommentById
+* https://app-blogengine.herokuapp.com/api/Post/AddCommentRejectPost
+* https://app-blogengine.herokuapp.com/api/Post/SubmitPost
+* https://app-blogengine.herokuapp.com/api/Post/ApprovePendingPost
+* https://app-blogengine.herokuapp.com/api/Post/RejectPendingPost
 
 GET:
 
-https://app-blogengine.herokuapp.com/api/Post/getPublishedPosts
-https://app-blogengine.herokuapp.com/api/Post/getCreateAndPendingPosts
-https://app-blogengine.herokuapp.com/api/Post/getPendingPosts
-https://app-blogengine.herokuapp.com/api/Post/getCommentsRejectPost
+* https://app-blogengine.herokuapp.com/api/Post/getPublishedPosts
+* https://app-blogengine.herokuapp.com/api/Post/getCreateAndPendingPosts
+* https://app-blogengine.herokuapp.com/api/Post/getPendingPosts
+* https://app-blogengine.herokuapp.com/api/Post/getCommentsRejectPost
 
 ```
 command to run if program contains helper info
