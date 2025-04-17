@@ -12,5 +12,7 @@ namespace BlogEngine.Models
         public string Role { get; set; }
         public byte[] PassWordHash { get; set; }
         public byte[] PassWordSalt { get; set; }
+        public string Token { get; set; }
+        public DateTime Expiry { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace BlogEngine.Services
         {
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            mongoCollection = database.GetCollection<Post>(settings.CollectionName);
+            mongoCollection = database.GetCollection<Post>(settings.PostCollection);
 
             
         }

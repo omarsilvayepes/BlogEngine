@@ -1,0 +1,413 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\refreshrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\refreshrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\settings\\databasesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\settings\\databasesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\jwtpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\jwtpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\blogengine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:1:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\blogengine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|c:\\users\\omary\\onedrive\\escritorio\\learningdev\\blog_engine\\blogengine\\blogengine\\blogengine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:2:0:{AF54A819-9939-40B4-943A-125EBFDB4430}|BlogEngine\\BlogEngine.csproj|solutionrelative:blogengine\\blogengine.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BlogEngine\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-19T14:19:43.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Program.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Program.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Program.cs",
+              "RelativeToolTip": "BlogEngine\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T18:38:45.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Controllers\\PostController.cs",
+              "RelativeToolTip": "BlogEngine\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAALAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T19:39:13.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\appsettings.json",
+              "RelativeDocumentMoniker": "BlogEngine\\appsettings.json",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\appsettings.json",
+              "RelativeToolTip": "BlogEngine\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2022-08-18T18:34:43.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BlogEngine\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BlogEngine\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2022-08-18T18:53:34.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Services\\UserService.cs",
+              "RelativeToolTip": "BlogEngine\\Services\\UserService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwDwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-19T13:52:07.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "BlogEngine\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-19T13:50:11.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T19:42:05.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Startup.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Startup.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Startup.cs",
+              "RelativeToolTip": "BlogEngine\\Startup.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABwAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T18:42:57.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\UserDTO.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\UserDTO.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-19T14:25:50.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\User.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T00:09:39.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Response.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T19:42:45.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T19:03:12.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Services\\PostService.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Services\\PostService.cs",
+              "RelativeToolTip": "BlogEngine\\Services\\PostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T18:26:19.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RefreshRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\RefreshRequestModel.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\RefreshRequestModel.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\RefreshRequestModel.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\RefreshRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:52:01.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DatabaseSettings.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Settings\\DatabaseSettings.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Settings\\DatabaseSettings.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Settings\\DatabaseSettings.cs",
+              "RelativeToolTip": "BlogEngine\\Settings\\DatabaseSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-18T18:31:53.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JWTPackage.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\JWTPackage.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\JWTPackage.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\JWTPackage.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\JWTPackage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-19T14:35:11.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Post.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\Post.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-17T23:21:27.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Models\\Comment.cs",
+              "RelativeToolTip": "BlogEngine\\Models\\Comment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-17T23:51:02.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Repositories\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "BlogEngine\\Repositories\\IPostRepository.cs",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Repositories\\IPostRepository.cs",
+              "RelativeToolTip": "BlogEngine\\Repositories\\IPostRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAQwAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-08-17T23:30:29.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BlogEngine.csproj",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\BlogEngine.csproj",
+              "RelativeDocumentMoniker": "BlogEngine\\BlogEngine.csproj",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\BlogEngine.csproj",
+              "RelativeToolTip": "BlogEngine\\BlogEngine.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-17T18:46:49.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Dockerfile",
+              "RelativeDocumentMoniker": "BlogEngine\\Dockerfile",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\Dockerfile",
+              "RelativeToolTip": "BlogEngine\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2022-09-12T16:25:36.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BlogEngine.csproj",
+              "DocumentMoniker": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\BlogEngine.csproj",
+              "RelativeDocumentMoniker": "BlogEngine\\BlogEngine.csproj",
+              "ToolTip": "C:\\Users\\omary\\OneDrive\\Escritorio\\LearningDEV\\BLOG_ENGINE\\BlogEngine\\BlogEngine\\BlogEngine.csproj",
+              "RelativeToolTip": "BlogEngine\\BlogEngine.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2022-08-22T13:37:18.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

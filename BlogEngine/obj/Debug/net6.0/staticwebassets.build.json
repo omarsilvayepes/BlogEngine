@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "uQPK8Bm+c0HHoP/ibTFz595o2gL8gMqi89PeqKGCAGc=",
+  "Hash": "2C12kCVE+p1ZTk5PH/6vkaVo8W3sZocLvMycvgHUHso=",
   "Source": "BlogEngine",
   "BasePath": "_content/BlogEngine",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

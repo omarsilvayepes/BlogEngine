@@ -5,7 +5,8 @@ namespace BlogEngine.Repositories
     public interface IUserRepository
     {
         Task<string> Register(User user, string password);
-        Task<string> Login(string userName, string password,string role);
+        Task<LoginResponse> Login(string userName, string password,string role);
         Task<bool> IsRegister(string userName);
+        Task<LoginResponse> validateRefreshToken(string refreshToken);
     }
 }
